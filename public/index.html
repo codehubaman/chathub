@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatroom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Display "Text Chat" at the top center -->
+    <div id="header" class="header">
+        <h1>Text Chat</h1>
+    </div>
+
+    <div id="login-container" class="login-container">
+        <h2>Welcome to the Chatroom</h2>
+        <input id="username-input" type="text" placeholder="Enter your name" />
+        <button id="join-button">Join Chat</button>
+    </div>
+
+    <div id="chat-container" class="chat-container hidden">
+        <div id="welcome-message" class="welcome-message"></div>
+        <div id="messages" class="chat-box"></div>
+        <div class="input-container">
+            <input id="message-input" type="text" placeholder="Type a message..." autofocus />
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

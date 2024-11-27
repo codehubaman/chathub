@@ -1,0 +1,244 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styles for Text Chat */
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    /* Make the header bold */
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Login container styles */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.login-container input {
+    padding: 10px;
+    margin: 5px 0;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+/* Chat container styles */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat box styling */
+.chat-box {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-container input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: #45a049;
+}
+
+/* Hidden class to hide the chat window initially */
+.hidden {
+    display: none;
+}
+
+/* Style for individual messages */
+.message {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.my-message {
+    background-color: #e1f7d5;
+    text-align: right;
+}
+
+.other-message {
+    background-color: #f1f1f1;
+}
+
+.system-message {
+    font-style: italic;
+    color: gray;
+}
+
+.welcome-message {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens smaller than 768px (Tablets, Mobile Landscape) */
+@media (max-width: 768px) {
+    .header {
+        font-size: 18px;
+        /* Make the header font size smaller */
+        padding: 15px 0;
+        /* Reduce header padding */
+    }
+
+    .login-container {
+        padding: 15px;
+        /* Reduce padding in the login container */
+    }
+
+    .login-container input {
+        width: 180px;
+        /* Make the input box smaller */
+    }
+
+    .login-container button {
+        width: 100%;
+        /* Make the button full width */
+    }
+
+    .chat-container {
+        width: 100%;
+        max-width: 95%;
+        /* Increase the chat container width */
+        padding: 15px;
+    }
+
+    .chat-box {
+        max-height: 300px;
+        /* Reduce chat box height */
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container input {
+        width: 90%;
+        /* Increase input field width */
+    }
+
+    .input-container button {
+        width: 90%;
+        /* Make the send button full width */
+        margin-top: 10px;
+    }
+}
+
+/* For screens smaller than 480px (Mobile Portrait) */
+@media (max-width: 480px) {
+    .header {
+        font-size: 16px;
+        /* Further reduce the font size */
+        padding: 10px 0;
+        /* Reduce header padding even more */
+    }
+
+    .login-container {
+        padding: 10px;
+        /* Reduce padding in login container */
+    }
+
+    .login-container input {
+        width: 150px;
+        /* Make the input field narrower */
+    }
+
+    .login-container button {
+        width: 100%;
+        /* Full width button */
+    }
+
+    .chat-container {
+        width: 100%;
+        max-width: 90%;
+        /* Max width 90% for chat container */
+        padding: 10px;
+    }
+
+    .chat-box {
+        max-height: 250px;
+        /* Decrease chat box height even further */
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container input {
+        width: 85%;
+        /* Make input wider */
+    }
+
+    .input-container button {
+        width: 85%;
+        /* Full width button */
+        margin-top: 10px;
+    }
+}
